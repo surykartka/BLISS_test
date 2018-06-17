@@ -1,0 +1,5 @@
+File	Total reads	Reads at least 6 nt long after adapter trimming	Reads with the barcode
+B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq	5253177	4515902	102725
+B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq	5253177	5247088	101
+B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq	3793031	3515687	212854
+B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq	3793031	3788402	67
