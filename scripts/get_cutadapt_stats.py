@@ -1,7 +1,7 @@
 from __future__ import print_function
 
-"""This scripts reads cutadapt std output and reads the basic statistics to a tab-delimited table.
-The table is then visualized in Numbers.
+"""This scripts reads cutadapt std output and writes the basic statistics to a tab-delimited table.
+The table is then visualized in Numbers and plotted to cutadapt_stats.png.
 """
 
 cutadapt_output = 'analysis/cutadapt.out' # std output of cutadapt
