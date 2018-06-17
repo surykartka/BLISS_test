@@ -2,7 +2,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R1_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 118.07 s (22 us/read; 2.67 M reads/minute).
+Finished in 117.20 s (22 us/read; 2.69 M reads/minute).
 
 === Summary ===
 
@@ -104,7 +104,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 34.57 s (8 us/read; 7.84 M reads/minute).
+Finished in 34.88 s (8 us/read; 7.77 M reads/minute).
 
 === Summary ===
 
@@ -131,7 +131,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -a TCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R2_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 103.54 s (20 us/read; 3.04 M reads/minute).
+Finished in 103.26 s (20 us/read; 3.05 M reads/minute).
 
 === Summary ===
 
@@ -240,7 +240,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 38.38 s (7 us/read; 8.20 M reads/minute).
+Finished in 37.06 s (7 us/read; 8.49 M reads/minute).
 
 === Summary ===
 
@@ -267,7 +267,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R1_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 93.62 s (25 us/read; 2.43 M reads/minute).
+Finished in 93.54 s (25 us/read; 2.43 M reads/minute).
 
 === Summary ===
 
@@ -369,7 +369,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 30.09 s (9 us/read; 7.01 M reads/minute).
+Finished in 29.25 s (8 us/read; 7.21 M reads/minute).
 
 === Summary ===
 
@@ -396,7 +396,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -a TCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R2_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 76.19 s (20 us/read; 2.99 M reads/minute).
+Finished in 77.56 s (20 us/read; 2.93 M reads/minute).
 
 === Summary ===
 
@@ -505,7 +505,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 28.38 s (7 us/read; 8.01 M reads/minute).
+Finished in 28.64 s (8 us/read; 7.94 M reads/minute).
 
 === Summary ===
 
