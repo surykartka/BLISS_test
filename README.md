@@ -48,4 +48,5 @@ The input fastq files were downloaded from [here](http://bio4.cent.uw.edu.pl/BCH
 
 The script [`get_cutadapt_stats.py`](scripts/get_cutadapt_stats.py) writes a table with trimming statistics: `python scripts/get_cutadapt_stats.py`. The plot below (from `analysis/cutadapt_stats.keynote`) shows numbers of reads after trimming and with barcodes for the respective fastq files.
 
-![cutadapt](analysis/cutadapt_stats.png =600x)
+![im](https://github.com/surykartka/BLISS_test/blob/master/analysis/cutadapt_stats.png =600x)
+
