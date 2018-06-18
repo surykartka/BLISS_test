@@ -55,7 +55,7 @@ Script [`get_cutadapt_stats.py`](scripts/get_cutadapt_stats.py) writes a table w
 * Large contamination with adapters (over 90% of reads are affected).
 * Small fraction of reads with perfect match to the barcode at 5' end.
 
-File | Total reads | Without adapters (min 6 nt) | With barcode (min 1 nt, max one mismatch) | With barcode (min 1 nt)
+File | Total reads | Without adapters (min 6 nt) | With 'AGACTCT' barcode (min 1 nt, max one mismatch) | With 'AGACTCT' barcode (min 1 nt)
 -----|-------------|-----------------------------------|--------------------------------------------------------------|--------------------------------------
 C1_S1_L001_R1 | 5,253,177 | 214,533 | 172,057 | 44,853
 C1_S1_L001_R2 | 5,253,177 | 853,167 | 4,141 | 88
