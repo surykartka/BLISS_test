@@ -6,7 +6,7 @@ The commands used can be found in [`cmd.sh`](cmd.sh).
 
 ## Basic questions
 
-1. How many reads start with the barcode ('AGACTCT'/'AGAGTCT')?
+1. How many reads start with the barcode ('AGACTCT', or 'AGACTC')?
 2. How many reads can be mapped to a reference human genome?
 3. How many reads can be mapped to telomeres?
 
@@ -71,11 +71,15 @@ Mapping of the barcoded reads to the human genome was done as follows ([`cmd_2.s
 	* 214,533 reads of C1_S1
 	* 927,052 reads of NB_S2
 * To check overrepresented sequences at 5':
-	* fastq files were converted to fasta (at [`mapping`](mapping)) with: `fastq_to_fasta -Q33 -i B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_1.fastq -o C1_S1_R1.fa`
-	* the first 10 nt cut with: `python ../scripts/cut_10.py C1_S1_R1.fa C1_S1_R1_first10.fa`
-	* visualized with weblogo using: `weblogo -f C1_S1_R1_first10.fa -D fasta -o C1_S1_R1_first10.pdf -F pdf -A dna --errorbars no -c classic`
+	* Fastq files were converted to fasta (at [`mapping`](mapping)) with: `fastq_to_fasta -Q33 -i B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_1.fastq -o C1_S1_R1.fa`
+	* The first 10 nt cut with: `python ../scripts/cut_10.py C1_S1_R1.fa C1_S1_R1_first10.fa`
+	* Visualized with weblogo using: `weblogo -f C1_S1_R1_first10.fa -D fasta -o C1_S1_R1_first10.pdf -F pdf -A dna --errorbars no -c classic`
 
-![alt text](analysis/first_10.png)
+	![alt text](analysis/first_10.png)
+
+	* Therefore, in the next steps, we would assume barcode = 'AGACTC'.
+	
+* Barcoded reads (with 'GACTC') were written together with their R2 counterparts to paired fasta files: `cutadapt -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_1.fastq.gz -p trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_1.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_2.fastq.gz`
 
 * The reference indexed GRCh38/hg38 genome was downloaded from [NCBI ftp](ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38/seqs_for_alignment_pipelines/) (`GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz`), as linked in [the Bowtie 2 website](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml).
 
