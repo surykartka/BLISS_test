@@ -55,7 +55,7 @@ Script [`get_cutadapt_stats.py`](scripts/get_cutadapt_stats.py) writes a table w
 * Large contamination with adapters (over 90% of reads are affected).
 * Small fraction of reads with perfect match to the barcode at 5' end.
 
-File | Total reads | Without adapters (min 6 nt) | With 'AGACTCT' barcode (min 1 nt, max one mismatch) | With 'AGACTCT' barcode (min 1 nt)
+File | Total reads | Without adapters (min 6 nt) | With 'AGACTCT' barcode (min 1 nt, max 1 mismatch) | With 'AGACTCT' barcode (min 1 nt)
 -----|-------------|-----------------------------------|--------------------------------------------------------------|--------------------------------------
 C1_S1_L001_R1 | 5,253,177 | 214,533 | 172,057 | 44,853
 C1_S1_L001_R2 | 5,253,177 | 853,167 | 4,141 | 88
@@ -63,9 +63,9 @@ NB_S2_L001_R1 | 3,793,031 | 927,052 | 775,657 | 143,443
 NB_S2_L001_R2 | 3,793,031 | 958,800 | 3,527 | 55
 
 
-## How many of the barcoded reads can be mapped to human genome?
+## What happens to the barcode?
 
-Mapping of the barcoded reads to the human genome was done as follows ([`cmd_2.sh`](cmd_2.sh)):
+Analysis of the barcoded reads([`cmd_2.sh`](cmd_2.sh)):
 
 * First, only reads without adaptors (R1 of min. 6 nt) were left, together with their R2 counterparts, e.g.: `cutadapt -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_1.fastq.gz -p trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_2.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R1_BCHLT.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R2_BCHLT.fastq.gz > analysis/cutadapt_2.out`
 	* 214,533 reads of C1_S1
@@ -82,6 +82,10 @@ Mapping of the barcoded reads to the human genome was done as follows ([`cmd_2.s
 * Barcoded reads (with 'AGACTC') were written together with their R2 counterparts to paired fasta files: `cutadapt -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_1.fastq.gz -p trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_1.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_2.fastq.gz`:
 	* 166,254 reads in C1_S1 (79.7%)
 	* 739,074 reads in NB_S2 (77.5%)
+
+## How many of the barcoded reads can be mapped to human genome?
+
+Mapping of the barcoded reads to the human genome was done as follows ([`cmd_2.sh`](cmd_2.sh)):
 
 * The reference indexed GRCh38/hg38 genome was downloaded from [NCBI ftp](ftp://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Eukaryotes/vertebrates_mammals/Homo_sapiens/GRCh38/seqs_for_alignment_pipelines/) (`GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index.tar.gz`), as linked in [the Bowtie 2 website](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml).
 
