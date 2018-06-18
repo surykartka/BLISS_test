@@ -6,7 +6,7 @@ The commands used can be found in [`cmd.sh`](cmd.sh).
 
 ## Basic questions
 
-1. How many reads have barcode ('AGACTCT'/'AGAGTCT') in the beginning?
+1. How many reads start with the barcode ('AGACTCT'/'AGAGTCT')?
 2. How many reads can be mapped to a reference human genome?
 3. How many reads can be mapped to telomeres?
 
@@ -46,7 +46,7 @@ The input fastq files were downloaded from [here](http://bio4.cent.uw.edu.pl/BCH
 
 * Similarly for the remaining files (or run `bash cmd.sh &`), write standard output to [`cutadapt.out`](analysis/cutadapt.out).
 
-## How many reads have the barcode in the beginning?
+## How many reads start with the barcode?
 
 Script [`get_cutadapt_stats.py`](scripts/get_cutadapt_stats.py) writes a table with trimming statistics: `python scripts/get_cutadapt_stats.py`. A plot below (from `analysis/cutadapt_stats.numbers`) shows numbers of reads after trimming and with barcodes for the respective fastq files.
 
