@@ -1,18 +1,18 @@
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R1_BCHLT.fastq.gz
+Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R1_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 121.99 s (23 us/read; 2.58 M reads/minute).
+Finished in 110.00 s (21 us/read; 2.87 M reads/minute).
 
 === Summary ===
 
 Total reads processed:               5,253,177
 Reads with adapters:                 5,038,644 (95.9%)
 Reads that were too short:             737,275 (14.0%)
-Reads written (passing filters):     4,515,902 (86.0%)
+Reads written (passing filters):       214,533 (4.1%)
 
 Total basepairs processed:   372,975,567 bp
-Total written (filtered):     56,381,610 bp (15.1%)
+Total written (filtered):     15,231,843 bp (4.1%)
 
 === Adapter 1 ===
 
@@ -104,73 +104,73 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 34.61 s (8 us/read; 7.83 M reads/minute).
+Finished in 2.28 s (11 us/read; 5.63 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               4,515,902
-Reads with adapters:                   107,137 (2.4%)
-Reads that were too short:               4,412 (0.1%)
-Reads written (passing filters):       102,725 (2.3%)
+Total reads processed:                 214,533
+Reads with adapters:                    44,853 (20.9%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):        44,853 (20.9%)
 
-Total basepairs processed:    56,381,610 bp
-Total written (filtered):      4,685,925 bp (8.3%)
+Total basepairs processed:    15,231,843 bp
+Total written (filtered):      2,870,592 bp (18.8%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 107137 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 44853 times.
 
 No. of allowed errors:
 0-7 bp: 0
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-7	107137	275.6	0	107137
+7	44853	13.1	0	44853
 
 This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0.15 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_3.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 15.0% errors in single-end mode ...
-Finished in 65.66 s (15 us/read; 4.13 M reads/minute).
+Finished in 4.13 s (19 us/read; 3.12 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               4,515,902
-Reads with adapters:                 2,877,136 (63.7%)
-Reads that were too short:             331,507 (7.3%)
-Reads written (passing filters):     2,545,629 (56.4%)
+Total reads processed:                 214,533
+Reads with adapters:                   172,057 (80.2%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):       172,057 (80.2%)
 
-Total basepairs processed:    56,381,610 bp
-Total written (filtered):     22,928,554 bp (40.7%)
+Total basepairs processed:    15,231,843 bp
+Total written (filtered):     11,112,154 bp (73.0%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 2877136 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 172057 times.
 
 No. of allowed errors:
 0-5 bp: 0; 6-7 bp: 1
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-6	2653317	1102.5	0	0 2653317
-7	131695	275.6	1	107137 24558
-8	92124	275.6	1	0 92124
+6	112141	52.4	0	0 112141
+7	48281	13.1	1	44853 3428
+8	11635	13.1	1	0 11635
 
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a GATCGTCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R2_BCHLT.fastq.gz
+Command line parameters: -a GATCGTCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R2_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 106.92 s (20 us/read; 2.95 M reads/minute).
+Finished in 96.36 s (18 us/read; 3.27 M reads/minute).
 
 === Summary ===
 
 Total reads processed:               5,253,177
 Reads with adapters:                 4,400,010 (83.8%)
 Reads that were too short:             429,096 (8.2%)
-Reads written (passing filters):     4,824,081 (91.8%)
+Reads written (passing filters):       853,167 (16.2%)
 
 Total basepairs processed:   372,975,567 bp
-Total written (filtered):    106,962,605 bp (28.7%)
+Total written (filtered):     60,574,857 bp (16.2%)
 
 === Adapter 1 ===
 
@@ -269,73 +269,73 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 35.27 s (7 us/read; 8.21 M reads/minute).
+Finished in 7.03 s (8 us/read; 7.28 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               4,824,081
-Reads with adapters:                       101 (0.0%)
-Reads that were too short:                   9 (0.0%)
-Reads written (passing filters):            92 (0.0%)
+Total reads processed:                 853,167
+Reads with adapters:                        88 (0.0%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):            88 (0.0%)
 
-Total basepairs processed:   106,962,605 bp
-Total written (filtered):          5,726 bp (0.0%)
+Total basepairs processed:    60,574,857 bp
+Total written (filtered):          5,632 bp (0.0%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 101 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 88 times.
 
 No. of allowed errors:
 0-7 bp: 0
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-7	101	294.4	0	101
+7	88	52.1	0	88
 
 This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0.15 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_3.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 15.0% errors in single-end mode ...
-Finished in 34.61 s (7 us/read; 8.36 M reads/minute).
+Finished in 7.17 s (8 us/read; 7.14 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               4,824,081
-Reads with adapters:                    11,294 (0.2%)
-Reads that were too short:               5,151 (0.1%)
-Reads written (passing filters):         6,143 (0.1%)
+Total reads processed:                 853,167
+Reads with adapters:                     4,141 (0.5%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):         4,141 (0.5%)
 
-Total basepairs processed:   106,962,605 bp
-Total written (filtered):        297,217 bp (0.3%)
+Total basepairs processed:    60,574,857 bp
+Total written (filtered):        265,270 bp (0.4%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 11294 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 4141 times.
 
 No. of allowed errors:
 0-5 bp: 0; 6-7 bp: 1
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-6	1500	1177.8	0	0 1500
-7	8599	294.4	1	101 8498
-8	1195	294.4	1	0 1195
+6	431	208.3	0	0 431
+7	3525	52.1	1	88 3437
+8	185	52.1	1	0 185
 
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R1_BCHLT.fastq.gz
+Command line parameters: -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R1_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 93.24 s (25 us/read; 2.44 M reads/minute).
+Finished in 87.90 s (23 us/read; 2.59 M reads/minute).
 
 === Summary ===
 
 Total reads processed:               3,793,031
 Reads with adapters:                 2,865,979 (75.6%)
 Reads that were too short:             277,344 (7.3%)
-Reads written (passing filters):     3,515,687 (92.7%)
+Reads written (passing filters):       927,052 (24.4%)
 
 Total basepairs processed:   269,305,201 bp
-Total written (filtered):    105,408,902 bp (39.1%)
+Total written (filtered):     65,820,692 bp (24.4%)
 
 === Adapter 1 ===
 
@@ -427,73 +427,73 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 28.91 s (8 us/read; 7.30 M reads/minute).
+Finished in 9.19 s (10 us/read; 6.05 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               3,515,687
-Reads with adapters:                   214,967 (6.1%)
-Reads that were too short:               2,113 (0.1%)
-Reads written (passing filters):       212,854 (6.1%)
+Total reads processed:                 927,052
+Reads with adapters:                   143,443 (15.5%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):       143,443 (15.5%)
 
-Total basepairs processed:   105,408,902 bp
-Total written (filtered):     12,349,752 bp (11.7%)
+Total basepairs processed:    65,820,692 bp
+Total written (filtered):      9,180,352 bp (13.9%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 214967 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 143443 times.
 
 No. of allowed errors:
 0-7 bp: 0
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-7	214967	214.6	0	214967
+7	143443	56.6	0	143443
 
 This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0.15 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_3.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 15.0% errors in single-end mode ...
-Finished in 54.63 s (16 us/read; 3.86 M reads/minute).
+Finished in 16.58 s (18 us/read; 3.35 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               3,515,687
-Reads with adapters:                 2,520,708 (71.7%)
-Reads that were too short:             175,634 (5.0%)
-Reads written (passing filters):     2,345,074 (66.7%)
+Total reads processed:                 927,052
+Reads with adapters:                   775,657 (83.7%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):       775,657 (83.7%)
 
-Total basepairs processed:   105,408,902 bp
-Total written (filtered):     68,144,687 bp (64.6%)
+Total basepairs processed:    65,820,692 bp
+Total written (filtered):     50,088,812 bp (76.1%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 2520708 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 775657 times.
 
 No. of allowed errors:
 0-5 bp: 0; 6-7 bp: 1
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-6	2140924	858.3	0	0 2140924
-7	247817	214.6	1	214967 32850
-8	131967	214.6	1	0 131967
+6	527223	226.3	0	0 527223
+7	167975	56.6	1	143443 24532
+8	80459	56.6	1	0 80459
 
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a GATCGTCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R2_BCHLT.fastq.gz
+Command line parameters: -a GATCGTCGGACTGTAGAACTCTGAACGTGTAGATCTCGGTGGTCGCCGTATCATT --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R2_BCHLT.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 10.0% errors in single-end mode ...
-Finished in 77.95 s (21 us/read; 2.92 M reads/minute).
+Finished in 70.48 s (19 us/read; 3.23 M reads/minute).
 
 === Summary ===
 
 Total reads processed:               3,793,031
 Reads with adapters:                 2,834,231 (74.7%)
 Reads that were too short:             255,740 (6.7%)
-Reads written (passing filters):     3,537,291 (93.3%)
+Reads written (passing filters):       958,800 (25.3%)
 
 Total basepairs processed:   269,305,201 bp
-Total written (filtered):    114,398,444 bp (42.5%)
+Total written (filtered):     68,074,800 bp (25.3%)
 
 === Adapter 1 ===
 
@@ -592,55 +592,55 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_2.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in single-end mode ...
-Finished in 26.02 s (7 us/read; 8.16 M reads/minute).
+Finished in 7.96 s (8 us/read; 7.22 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               3,537,291
-Reads with adapters:                        67 (0.0%)
-Reads that were too short:                  10 (0.0%)
-Reads written (passing filters):            57 (0.0%)
+Total reads processed:                 958,800
+Reads with adapters:                        55 (0.0%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):            55 (0.0%)
 
-Total basepairs processed:   114,398,444 bp
-Total written (filtered):          3,539 bp (0.0%)
+Total basepairs processed:    68,074,800 bp
+Total written (filtered):          3,520 bp (0.0%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 67 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 55 times.
 
 No. of allowed errors:
 0-7 bp: 0
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-7	67	215.9	0	67
+7	55	58.5	0	55
 
 This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTCT -e 0.15 --overlap 7 --minimum-length 1 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_3.fastq.gz --discard-untrimmed trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 15.0% errors in single-end mode ...
-Finished in 26.00 s (7 us/read; 8.16 M reads/minute).
+Finished in 8.05 s (8 us/read; 7.14 M reads/minute).
 
 === Summary ===
 
-Total reads processed:               3,537,291
-Reads with adapters:                     7,461 (0.2%)
-Reads that were too short:               2,731 (0.1%)
-Reads written (passing filters):         4,730 (0.1%)
+Total reads processed:                 958,800
+Reads with adapters:                     3,527 (0.4%)
+Reads that were too short:                   0 (0.0%)
+Reads written (passing filters):         3,527 (0.4%)
 
-Total basepairs processed:   114,398,444 bp
-Total written (filtered):        262,975 bp (0.2%)
+Total basepairs processed:    68,074,800 bp
+Total written (filtered):        226,109 bp (0.3%)
 
 === Adapter 1 ===
 
-Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 7461 times.
+Sequence: AGACTCT; Type: anchored 5'; Length: 7; Trimmed: 3527 times.
 
 No. of allowed errors:
 0-5 bp: 0; 6-7 bp: 1
 
 Overview of removed sequences
 length	count	expect	max.err	error counts
-6	1097	863.6	0	0 1097
-7	5766	215.9	1	67 5699
-8	598	215.9	1	0 598
+6	588	234.1	0	0 588
+7	2732	58.5	1	55 2677
+8	207	58.5	1	0 207
 

@@ -1,2 +1,2 @@
 fastq/*
-trim_adapters/*_cutadapt_1.fastq.gz
+trim_adapters/*.fastq*

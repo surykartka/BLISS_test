@@ -8,7 +8,7 @@ cutadapt_output = 'analysis/cutadapt.out' # std output of cutadapt
 output = 'analysis/cutadapt.stats' # output with final table
 
 with open(output, 'w') as f:
-	print('File', 'Total reads', 'Reads at least 6 nt long after adapter trimming', 'Reads with barcode of non-zero length (one mismatch allowed)', 'Reads with barcode of non-zero length', sep='\t', file=f)
+	print('File', 'Total reads', 'Reads without adapters (min 6 nt)', 'Reads with barcode of non-zero length (one mismatch allowed)', 'Reads with barcode of non-zero length', sep='\t', file=f)
 	for line in open(cutadapt_output):
 		if line.startswith('Command line parameters'):
 			infile = line.split()[-1].split('/')[-1]
