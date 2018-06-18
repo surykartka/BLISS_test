@@ -16,7 +16,7 @@ The input fastq files were downloaded from [here](http://bio4.cent.uw.edu.pl/BCH
 
 ## Quality control
 
-* [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) was run to check quality of the reads (outputs written to [`FastQC`](FastQC)). Overrepresented sequences suggest contamination with 'RNA PCR Primer, Index 6' (R1 C1_S1), 'RNA PCR Primer, Index 12' (R1 NB_S2), and 'Illumina RNA PCR Primer' (R2). Sequences of these adapter (their reverse complement) were found [here](https://github.com/csf-ngs/fastqc/blob/master/Contaminants/contaminant_list.txt) and written to [`primers.fa`](trim_adapters/primers.fa).
+* [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) was run to check quality of the reads (outputs written to [`FastQC`](FastQC)). Overrepresented sequences suggest contamination with 'RNA PCR Primer, Index 6' (R1 C1_S1), 'RNA PCR Primer, Index 12' (R1 NB_S2), and 'Illumina RNA PCR Primer' (R2). Sequences of these adapters (their reverse complement) were found [here](https://github.com/csf-ngs/fastqc/blob/master/Contaminants/contaminant_list.txt) and written to [`primers.fa`](trim_adapters/primers.fa).
 
 * The adapters were trimmed with [cutadapt](https://cutadapt.readthedocs.io/) (allowing at minimum three bases match between adapter and match, and discarding proccesed reads that are shorter than 6 nt), and only the reads without matching adapters were left, e.g.: `cutadapt -a TGGAATTCTCGGGTGCCAAGGAACTCCAGTCACGCCAATATCTCGTATGCCGTCTTCTGCTTG --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R1_BCHLT.fastq.gz > analysis/cutadapt.out`:
 
@@ -59,7 +59,7 @@ File | Total reads | Without adapters (min 6 nt) | With 'AGACTCT' barcode (min 1
 -----|-------------|-----------------------------------|--------------------------------------------------------------|--------------------------------------
 C1_S1_L001_R1 | 5,253,177 | 214,533 | 172,057 | 44,853
 C1_S1_L001_R2 | 5,253,177 | 853,167 | 4,141 | 88
-NB_S2_L001_R1 | 3,793,031 | 927,052 | 775,657 | 143,443
+NB_S2_L001_R1 | 3,793,031 | 560,407 | 474,298 | 126,418
 NB_S2_L001_R2 | 3,793,031 | 958,800 | 3,527 | 55
 
 

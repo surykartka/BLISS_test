@@ -1,5 +1,5 @@
 File	Total reads	Reads without adapters (min 6 nt)	Reads with barcode of non-zero length (one mismatch allowed)	Reads with barcode of non-zero length
 B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_1.fastq.gz	5253177	214533	172057	44853
 B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_1.fastq.gz	5253177	853167	4141	88
-B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz	3793031	927052	775657	143443
+B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_1.fastq.gz	3793031	560407	474298	126418
 B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_1.fastq.gz	3793031	958800	3527	55
