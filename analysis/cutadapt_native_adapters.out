@@ -1,0 +1,108 @@
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g AATGATACGGCGACCACCGAGATCTACACGTTCAGAGTTCTACAGTCCGACGATC --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_native_adapters.fastq.gz -p trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_native_adapters.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R1_BCHLT.fastq.gz fastq/B_SC-BLESS_C1_S1_L001_R2_BCHLT.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 10.0% errors in paired-end legacy mode ...
+Finished in 140.11 s (27 us/read; 2.25 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          5,253,177
+  Read 1 with adapter:                   7,074 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     5,246,103 (99.9%)
+
+Total basepairs processed:   745,951,134 bp
+  Read 1:   372,975,567 bp
+  Read 2:   372,975,567 bp
+Total written (filtered):    744,946,626 bp (99.9%)
+  Read 1:   372,473,313 bp
+  Read 2:   372,473,313 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AATGATACGGCGACCACCGAGATCTACACGTTCAGAGTTCTACAGTCCGACGATC; Type: regular 5'; Length: 55; Trimmed: 7074 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	4529	82080.9	0	4529
+4	1278	20520.2	0	1278
+5	194	5130.1	0	194
+6	194	1282.5	0	194
+7	145	320.6	0	145
+8	92	80.2	0	92
+9	18	20.0	0	12 6
+10	21	5.0	1	4 17
+11	74	1.3	1	0 74
+12	108	0.3	1	20 88
+13	37	0.1	1	1 36
+14	18	0.0	1	1 17
+15	15	0.0	1	3 12
+16	2	0.0	1	0 2
+18	2	0.0	1	0 0 2
+19	25	0.0	1	0 0 25
+20	9	0.0	2	1 3 5
+21	119	0.0	2	0 1 118
+22	98	0.0	2	1 5 92
+23	72	0.0	2	0 1 71
+24	20	0.0	2	0 0 20
+25	4	0.0	2	0 0 4
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g AATGATACGGCGACCACCGAGATCTACACGTTCAGAGTTCTACAGTCCGACGATC --discard-trimmed --minimum-length 6 -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_native_adapters.fastq.gz -p trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_native_adapters.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R1_BCHLT.fastq.gz fastq/B_SC-BLESS_NB_S2_L001_R2_BCHLT.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 10.0% errors in paired-end legacy mode ...
+Finished in 101.76 s (27 us/read; 2.24 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          3,793,031
+  Read 1 with adapter:                   4,686 (0.1%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     3,788,345 (99.9%)
+
+Total basepairs processed:   538,610,402 bp
+  Read 1:   269,305,201 bp
+  Read 2:   269,305,201 bp
+Total written (filtered):    537,944,990 bp (99.9%)
+  Read 1:   268,972,495 bp
+  Read 2:   268,972,495 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AATGATACGGCGACCACCGAGATCTACACGTTCAGAGTTCTACAGTCCGACGATC; Type: regular 5'; Length: 55; Trimmed: 4686 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	3154	59266.1	0	3154
+4	607	14816.5	0	607
+5	80	3704.1	0	80
+6	75	926.0	0	75
+7	62	231.5	0	62
+8	62	57.9	0	62
+9	13	14.5	0	7 6
+10	15	3.6	1	3 12
+11	51	0.9	1	0 51
+12	111	0.2	1	34 77
+13	29	0.1	1	4 25
+14	15	0.0	1	3 12
+15	13	0.0	1	1 12
+16	4	0.0	1	0 4
+17	4	0.0	1	0 4
+19	16	0.0	1	0 1 15
+20	11	0.0	2	2 7 2
+21	123	0.0	2	0 0 123
+22	120	0.0	2	2 2 116
+23	55	0.0	2	0 0 55
+24	34	0.0	2	0 2 32
+25	29	0.0	2	0 1 28
+26	2	0.0	2	0 0 2
+29	1	0.0	2	0 0 1
+

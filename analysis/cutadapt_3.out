@@ -2,7 +2,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_1.fastq.gz -p trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_1.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_paired_2.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
-Finished in 5.00 s (23 us/read; 2.57 M reads/minute).
+Finished in 6.86 s (32 us/read; 1.88 M reads/minute).
 
 === Summary ===
 
@@ -34,7 +34,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_1.fastq.gz -p trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_paired_1.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_paired_2.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
-Finished in 22.12 s (24 us/read; 2.52 M reads/minute).
+Finished in 27.65 s (30 us/read; 2.01 M reads/minute).
 
 === Summary ===
 

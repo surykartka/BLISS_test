@@ -1,3 +1,4 @@
 fastq/*
 trim_adapters/*.fastq*
 mapping/*
+barcodes/*.fastq*

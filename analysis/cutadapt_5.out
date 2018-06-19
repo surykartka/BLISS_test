@@ -1,0 +1,64 @@
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 66.87 s (15 us/read; 3.95 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          4,406,313
+  Read 1 with adapter:               2,721,252 (61.8%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:           4,039,970 (91.7%)
+Pairs written (passing filters):       277,829 (6.3%)
+
+Total basepairs processed:   134,042,164 bp
+  Read 1:    54,942,115 bp
+  Read 2:    79,100,049 bp
+Total written (filtered):     34,731,602 bp (25.9%)
+  Read 1:    16,803,083 bp
+  Read 2:    17,928,519 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGACTC; Type: anchored 5'; Length: 6; Trimmed: 2721252 times.
+
+No. of allowed errors:
+0-6 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+6	2721252	1075.8	0	2721252
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_30.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_30.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
+Finished in 56.02 s (17 us/read; 3.45 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          3,217,151
+  Read 1 with adapter:               2,220,416 (69.0%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:           2,337,214 (72.6%)
+Pairs written (passing filters):       692,904 (21.5%)
+
+Total basepairs processed:   169,466,817 bp
+  Read 1:    76,649,939 bp
+  Read 2:    92,816,878 bp
+Total written (filtered):     88,596,905 bp (52.3%)
+  Read 1:    42,741,234 bp
+  Read 2:    45,855,671 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: AGACTC; Type: anchored 5'; Length: 6; Trimmed: 2220416 times.
+
+No. of allowed errors:
+0-6 bp: 0
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+6	2220416	785.4	0	2220416
+
