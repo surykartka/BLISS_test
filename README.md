@@ -52,7 +52,7 @@ This paragraph corresponds to commands from [`cmd_4.sh`](cmd_4.sh).
 * The first and last 10 nucleotides in R1 and R2 reads, respectively, plotted in [WebLogo](https://weblogo.berkeley.edu/logo.cgi):
 ![alt text](analysis/first_10.png)
 
-* Therefore, we assume barcode as 'AGACTC'. Numbers of R1 reads starting with the exact barcode:
+* Therefore, we assume barcode as 'AGACTC' (and 'GAGTCT'/'CAGTCT' for R2 reads *as C is very common at the R2 5' ends*). Numbers of R1 reads starting with the exact barcode:
 	* 2,463,583 (46.9% of total) in C1_S1:
 		* among which 2,349,656 (44.7% of total) have the barcode (max. one mismatch) in R2
 	* 2,061,719 (54.0% of total) in NB_S1
