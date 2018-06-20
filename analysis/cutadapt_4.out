@@ -2,7 +2,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
-Finished in 88.71 s (20 us/read; 2.98 M reads/minute).
+Finished in 91.04 s (21 us/read; 2.90 M reads/minute).
 
 === Summary ===
 
@@ -34,7 +34,7 @@ This is cutadapt 1.16 with Python 2.7.12
 Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
-Finished in 70.04 s (22 us/read; 2.76 M reads/minute).
+Finished in 72.11 s (22 us/read; 2.68 M reads/minute).
 
 === Summary ===
 
@@ -61,4 +61,322 @@ No. of allowed errors:
 Overview of removed sequences
 length	count	expect	max.err	error counts
 6	2220416	785.4	0	2220416
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
+Finished in 65.82 s (27 us/read; 2.25 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          2,463,583
+  Read 1 with adapter:               2,377,681 (96.5%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              28,025 (1.1%)
+Pairs written (passing filters):     2,349,656 (95.4%)
+
+Total basepairs processed:    74,259,963 bp
+  Read 1:    52,108,401 bp
+  Read 2:    22,151,562 bp
+Total written (filtered):     31,516,747 bp (42.4%)
+  Read 1:    11,902,465 bp
+  Read 2:    19,614,282 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GAGTCT; Type: regular 3'; Length: 6; Trimmed: 2377681 times.
+
+No. of allowed errors:
+0-4 bp: 0; 5-6 bp: 1
+
+Bases preceding removed adapters:
+  A: 3.6%
+  C: 74.3%
+  G: 6.8%
+  T: 14.1%
+  none/other: 1.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	405	9623.4	0	0 405
+5	1064	2405.8	1	133 931
+6	1978703	601.5	1	1954745 23958
+7	2596	601.5	1	1835 761
+8	2159	601.5	1	1542 617
+9	1221	601.5	1	479 742
+10	1140	601.5	1	412 728
+11	1227	601.5	1	432 795
+12	1381	601.5	1	751 630
+13	1752	601.5	1	1094 658
+14	805	601.5	1	391 414
+15	1047	601.5	1	607 440
+16	1837	601.5	1	981 856
+17	3444	601.5	1	1638 1806
+18	2591	601.5	1	1489 1102
+19	1910	601.5	1	642 1268
+20	2160	601.5	1	1210 950
+21	1380	601.5	1	598 782
+22	1586	601.5	1	353 1233
+23	1003	601.5	1	116 887
+24	1390	601.5	1	141 1249
+25	2069	601.5	1	503 1566
+26	1734	601.5	1	258 1476
+27	1357	601.5	1	71 1286
+28	1319	601.5	1	65 1254
+29	934	601.5	1	91 843
+30	1118	601.5	1	107 1011
+31	2179	601.5	1	272 1907
+32	3011	601.5	1	460 2551
+33	5999	601.5	1	292 5707
+34	2897	601.5	1	309 2588
+35	3844	601.5	1	735 3109
+36	7149	601.5	1	1779 5370
+37	3826	601.5	1	1838 1988
+38	4435	601.5	1	967 3468
+39	2853	601.5	1	1064 1789
+40	2923	601.5	1	1017 1906
+41	5415	601.5	1	4312 1103
+42	2072	601.5	1	564 1508
+43	998	601.5	1	470 528
+44	833	601.5	1	321 512
+45	670	601.5	1	255 415
+46	589	601.5	1	246 343
+47	1639	601.5	1	525 1114
+48	2351	601.5	1	408 1943
+49	2276	601.5	1	497 1779
+50	1076	601.5	1	316 760
+51	1124	601.5	1	316 808
+52	1249	601.5	1	322 927
+53	1435	601.5	1	436 999
+54	2169	601.5	1	904 1265
+55	2493	601.5	1	1588 905
+56	9995	601.5	1	7445 2550
+57	11699	601.5	1	9746 1953
+58	12820	601.5	1	9380 3440
+59	11768	601.5	1	10141 1627
+60	18332	601.5	1	16864 1468
+61	23918	601.5	1	22804 1114
+62	28079	601.5	1	26377 1702
+63	7885	601.5	1	6879 1006
+64	11218	601.5	1	8024 3194
+65	12935	601.5	1	9345 3590
+66	4984	601.5	1	3973 1011
+67	6392	601.5	1	4015 2377
+68	8086	601.5	1	5481 2605
+69	15335	601.5	1	8907 6428
+70	101178	601.5	1	60966 40212
+71	8220	601.5	1	4775 3445
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_2.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
+Finished in 57.30 s (28 us/read; 2.16 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          2,061,719
+  Read 1 with adapter:               1,952,480 (94.7%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              50,473 (2.4%)
+Pairs written (passing filters):     1,902,007 (92.3%)
+
+Total basepairs processed:   113,645,770 bp
+  Read 1:    67,945,790 bp
+  Read 2:    45,699,980 bp
+Total written (filtered):     53,935,948 bp (47.5%)
+  Read 1:    14,924,793 bp
+  Read 2:    39,011,155 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GAGTCT; Type: regular 3'; Length: 6; Trimmed: 1952480 times.
+
+No. of allowed errors:
+0-4 bp: 0; 5-6 bp: 1
+
+Bases preceding removed adapters:
+  A: 5.0%
+  C: 70.1%
+  G: 8.2%
+  T: 14.1%
+  none/other: 2.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	639	8053.6	0	0 639
+5	1868	2013.4	1	270 1598
+6	1282613	503.3	1	1264650 17963
+7	3473	503.3	1	2682 791
+8	3850	503.3	1	2717 1133
+9	1526	503.3	1	578 948
+10	1635	503.3	1	608 1027
+11	1312	503.3	1	652 660
+12	1556	503.3	1	891 665
+13	1792	503.3	1	884 908
+14	963	503.3	1	460 503
+15	1464	503.3	1	646 818
+16	1770	503.3	1	779 991
+17	3605	503.3	1	1737 1868
+18	2539	503.3	1	1263 1276
+19	2833	503.3	1	694 2139
+20	2619	503.3	1	1180 1439
+21	1850	503.3	1	613 1237
+22	1996	503.3	1	468 1528
+23	1742	503.3	1	143 1599
+24	2148	503.3	1	169 1979
+25	2836	503.3	1	438 2398
+26	2645	503.3	1	181 2464
+27	3191	503.3	1	92 3099
+28	2711	503.3	1	71 2640
+29	1688	503.3	1	83 1605
+30	2078	503.3	1	104 1974
+31	2954	503.3	1	276 2678
+32	4710	503.3	1	560 4150
+33	8227	503.3	1	399 7828
+34	2856	503.3	1	234 2622
+35	6149	503.3	1	816 5333
+36	15888	503.3	1	1692 14196
+37	6348	503.3	1	1515 4833
+38	7752	503.3	1	766 6986
+39	3363	503.3	1	754 2609
+40	2670	503.3	1	798 1872
+41	7028	503.3	1	4828 2200
+42	2606	503.3	1	712 1894
+43	1206	503.3	1	349 857
+44	1330	503.3	1	294 1036
+45	965	503.3	1	209 756
+46	808	503.3	1	318 490
+47	2464	503.3	1	700 1764
+48	1963	503.3	1	374 1589
+49	3204	503.3	1	1306 1898
+50	1716	503.3	1	669 1047
+51	2114	503.3	1	958 1156
+52	2254	503.3	1	892 1362
+53	1853	503.3	1	1167 686
+54	4423	503.3	1	3105 1318
+55	5246	503.3	1	4180 1066
+56	28244	503.3	1	25713 2531
+57	32855	503.3	1	30467 2388
+58	30253	503.3	1	26290 3963
+59	35864	503.3	1	34429 1435
+60	35092	503.3	1	33619 1473
+61	43162	503.3	1	41674 1488
+62	68946	503.3	1	66610 2336
+63	10899	503.3	1	9933 966
+64	18302	503.3	1	15510 2792
+65	26407	503.3	1	21922 4485
+66	11809	503.3	1	10179 1630
+67	10887	503.3	1	9203 1684
+68	12364	503.3	1	8702 3662
+69	18607	503.3	1	13111 5496
+70	112245	503.3	1	83174 29071
+71	17505	503.3	1	13313 4192
+
+This is cutadapt 1.16 with Python 2.7.12
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_2.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
+Finished in 56.93 s (28 us/read; 2.17 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          2,061,719
+  Read 1 with adapter:               1,952,480 (94.7%)
+  Read 2 with adapter:                       0 (0.0%)
+Pairs that were too short:              50,473 (2.4%)
+Pairs written (passing filters):     1,902,007 (92.3%)
+
+Total basepairs processed:   113,645,770 bp
+  Read 1:    67,945,790 bp
+  Read 2:    45,699,980 bp
+Total written (filtered):     53,935,948 bp (47.5%)
+  Read 1:    14,924,793 bp
+  Read 2:    39,011,155 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: GAGTCT; Type: regular 3'; Length: 6; Trimmed: 1952480 times.
+
+No. of allowed errors:
+0-4 bp: 0; 5-6 bp: 1
+
+Bases preceding removed adapters:
+  A: 5.0%
+  C: 70.1%
+  G: 8.2%
+  T: 14.1%
+  none/other: 2.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+4	639	8053.6	0	0 639
+5	1868	2013.4	1	270 1598
+6	1282613	503.3	1	1264650 17963
+7	3473	503.3	1	2682 791
+8	3850	503.3	1	2717 1133
+9	1526	503.3	1	578 948
+10	1635	503.3	1	608 1027
+11	1312	503.3	1	652 660
+12	1556	503.3	1	891 665
+13	1792	503.3	1	884 908
+14	963	503.3	1	460 503
+15	1464	503.3	1	646 818
+16	1770	503.3	1	779 991
+17	3605	503.3	1	1737 1868
+18	2539	503.3	1	1263 1276
+19	2833	503.3	1	694 2139
+20	2619	503.3	1	1180 1439
+21	1850	503.3	1	613 1237
+22	1996	503.3	1	468 1528
+23	1742	503.3	1	143 1599
+24	2148	503.3	1	169 1979
+25	2836	503.3	1	438 2398
+26	2645	503.3	1	181 2464
+27	3191	503.3	1	92 3099
+28	2711	503.3	1	71 2640
+29	1688	503.3	1	83 1605
+30	2078	503.3	1	104 1974
+31	2954	503.3	1	276 2678
+32	4710	503.3	1	560 4150
+33	8227	503.3	1	399 7828
+34	2856	503.3	1	234 2622
+35	6149	503.3	1	816 5333
+36	15888	503.3	1	1692 14196
+37	6348	503.3	1	1515 4833
+38	7752	503.3	1	766 6986
+39	3363	503.3	1	754 2609
+40	2670	503.3	1	798 1872
+41	7028	503.3	1	4828 2200
+42	2606	503.3	1	712 1894
+43	1206	503.3	1	349 857
+44	1330	503.3	1	294 1036
+45	965	503.3	1	209 756
+46	808	503.3	1	318 490
+47	2464	503.3	1	700 1764
+48	1963	503.3	1	374 1589
+49	3204	503.3	1	1306 1898
+50	1716	503.3	1	669 1047
+51	2114	503.3	1	958 1156
+52	2254	503.3	1	892 1362
+53	1853	503.3	1	1167 686
+54	4423	503.3	1	3105 1318
+55	5246	503.3	1	4180 1066
+56	28244	503.3	1	25713 2531
+57	32855	503.3	1	30467 2388
+58	30253	503.3	1	26290 3963
+59	35864	503.3	1	34429 1435
+60	35092	503.3	1	33619 1473
+61	43162	503.3	1	41674 1488
+62	68946	503.3	1	66610 2336
+63	10899	503.3	1	9933 966
+64	18302	503.3	1	15510 2792
+65	26407	503.3	1	21922 4485
+66	11809	503.3	1	10179 1630
+67	10887	503.3	1	9203 1684
+68	12364	503.3	1	8702 3662
+69	18607	503.3	1	13111 5496
+70	112245	503.3	1	83174 29071
+71	17505	503.3	1	13313 4192
 
