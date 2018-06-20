@@ -71,45 +71,45 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 	* 692,904 R1 (18.3% of the initial reads) in NB_S1
 		* among which 587,517 R2 have at least 1 nt
 			* among which 168,203 R2 have at least 30 nt
-* The paired-end reads (R1 at least 30 nt, R2 at least 1 nt) were mapped to hg38 using `bowtie2` (stdout in [`bowtie.out`](analysis/bowtie.out)): `bowtie2 --fr -N 1 -x hg_mapping/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index -1 barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz -2 barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz --threads 6 -S hg_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_N1.sam 2>> analysis/bowtie.out`:
+* The paired-end reads (R1 at least 30 nt, R2 at least 1 nt, in ["mixed mode"](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)) were mapped to hg38 using [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (stdout in [`bowtie.out`](analysis/bowtie.out)): `bowtie2 -5 1 --fr -N 1 -x hg_mapping/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index -1 barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz -2 barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz --threads 6 -S hg_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_N1.sam 2>> analysis/bowtie.out`:
 	
 	* C1_S1: 
 	
 	```
 	238841 reads; of these:
 	  238841 (100.00%) were paired; of these:
-	    234326 (98.11%) aligned concordantly 0 times
-	    2700 (1.13%) aligned concordantly exactly 1 time
-	    1815 (0.76%) aligned concordantly >1 times
+	    234495 (98.18%) aligned concordantly 0 times
+	    2620 (1.10%) aligned concordantly exactly 1 time
+	    1726 (0.72%) aligned concordantly >1 times
 	    ----
-	    234326 pairs aligned concordantly 0 times; of these:
-	      36 (0.02%) aligned discordantly 1 time
+	    234495 pairs aligned concordantly 0 times; of these:
+	      194 (0.08%) aligned discordantly 1 time
 	    ----
-	    234290 pairs aligned 0 times concordantly or discordantly; of these:
-	      468580 mates make up the pairs; of these:
-	        360153 (76.86%) aligned 0 times
-	        703 (0.15%) aligned exactly 1 time
-	        107724 (22.99%) aligned >1 times
-	24.60% overall alignment rate
+	    234301 pairs aligned 0 times concordantly or discordantly; of these:
+	      468602 mates make up the pairs; of these:
+	        370608 (79.09%) aligned 0 times
+	        636 (0.14%) aligned exactly 1 time
+	        97358 (20.78%) aligned >1 times
+	22.42% overall alignment rate
 	```
 	* NB_S2: 
 		
 	```
 	587517 reads; of these:
 	  587517 (100.00%) were paired; of these:
-	    561118 (95.51%) aligned concordantly 0 times
-	    14796 (2.52%) aligned concordantly exactly 1 time
-	    11603 (1.97%) aligned concordantly >1 times
+	    562546 (95.75%) aligned concordantly 0 times
+	    13418 (2.28%) aligned concordantly exactly 1 time
+	    11553 (1.97%) aligned concordantly >1 times
 	    ----
-	    561118 pairs aligned concordantly 0 times; of these:
-	      78 (0.01%) aligned discordantly 1 time
+	    562546 pairs aligned concordantly 0 times; of these:
+	      666 (0.12%) aligned discordantly 1 time
 	    ----
-	    561040 pairs aligned 0 times concordantly or discordantly; of these:
-	      1122080 mates make up the pairs; of these:
-	        869852 (77.52%) aligned 0 times
-	        5939 (0.53%) aligned exactly 1 time
-	        246289 (21.95%) aligned >1 times
-	25.97% overall alignment rate
+	    561880 pairs aligned 0 times concordantly or discordantly; of these:
+	      1123760 mates make up the pairs; of these:
+	        893524 (79.51%) aligned 0 times
+	        5851 (0.52%) aligned exactly 1 time
+	        224385 (19.97%) aligned >1 times
+	23.96% overall alignment rate
 	```
 
 * SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
