@@ -1,0 +1,68 @@
+238841 reads; of these:
+  238841 (100.00%) were paired; of these:
+    234326 (98.11%) aligned concordantly 0 times
+    2700 (1.13%) aligned concordantly exactly 1 time
+    1815 (0.76%) aligned concordantly >1 times
+    ----
+    234326 pairs aligned concordantly 0 times; of these:
+      36 (0.02%) aligned discordantly 1 time
+    ----
+    234290 pairs aligned 0 times concordantly or discordantly; of these:
+      468580 mates make up the pairs; of these:
+        360153 (76.86%) aligned 0 times
+        703 (0.15%) aligned exactly 1 time
+        107724 (22.99%) aligned >1 times
+24.60% overall alignment rate
+587517 reads; of these:
+  587517 (100.00%) were paired; of these:
+    561118 (95.51%) aligned concordantly 0 times
+    14796 (2.52%) aligned concordantly exactly 1 time
+    11603 (1.97%) aligned concordantly >1 times
+    ----
+    561118 pairs aligned concordantly 0 times; of these:
+      78 (0.01%) aligned discordantly 1 time
+    ----
+    561040 pairs aligned 0 times concordantly or discordantly; of these:
+      1122080 mates make up the pairs; of these:
+        869852 (77.52%) aligned 0 times
+        5939 (0.53%) aligned exactly 1 time
+        246289 (21.95%) aligned >1 times
+25.97% overall alignment rate
+Error: Could not open alignment output file hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_N1.sam
+Error: Encountered internal Bowtie 2 exception (#1)
+Command: /opt/local/bin/bowtie2-align-s --wrapper basic-0 --fr -N 1 -x hg_mapping/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index --threads 6 -S hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_N1.sam -1 /tmp/89395.inpipe1 -2 /tmp/89395.inpipe2 
+(ERR): bowtie2-align exited with value 1
+Error: Could not open alignment output file hg38_mapping/B_SC-BLESS_NB_S2_L001_BCHLT_bowtie_N1.sam
+Error: Encountered internal Bowtie 2 exception (#1)
+Command: /opt/local/bin/bowtie2-align-s --wrapper basic-0 --fr -N 1 -x hg_mapping/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index --threads 6 -S hg38_mapping/B_SC-BLESS_NB_S2_L001_BCHLT_bowtie_N1.sam -1 /tmp/89402.inpipe1 -2 /tmp/89402.inpipe2 
+(ERR): bowtie2-align exited with value 1
+238841 reads; of these:
+  238841 (100.00%) were paired; of these:
+    234340 (98.12%) aligned concordantly 0 times
+    2725 (1.14%) aligned concordantly exactly 1 time
+    1776 (0.74%) aligned concordantly >1 times
+    ----
+    234340 pairs aligned concordantly 0 times; of these:
+      38 (0.02%) aligned discordantly 1 time
+    ----
+    234302 pairs aligned 0 times concordantly or discordantly; of these:
+      468604 mates make up the pairs; of these:
+        360203 (76.87%) aligned 0 times
+        700 (0.15%) aligned exactly 1 time
+        107701 (22.98%) aligned >1 times
+24.59% overall alignment rate
+587517 reads; of these:
+  587517 (100.00%) were paired; of these:
+    561326 (95.54%) aligned concordantly 0 times
+    14867 (2.53%) aligned concordantly exactly 1 time
+    11324 (1.93%) aligned concordantly >1 times
+    ----
+    561326 pairs aligned concordantly 0 times; of these:
+      115 (0.02%) aligned discordantly 1 time
+    ----
+    561211 pairs aligned 0 times concordantly or discordantly; of these:
+      1122422 mates make up the pairs; of these:
+        870471 (77.55%) aligned 0 times
+        5944 (0.53%) aligned exactly 1 time
+        246007 (21.92%) aligned >1 times
+25.92% overall alignment rate
