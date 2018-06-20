@@ -63,25 +63,43 @@ length	count	expect	max.err	error counts
 6	2220416	785.4	0	2220416
 
 This is cutadapt 1.16 with Python 2.7.12
+<<<<<<< HEAD
 Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
 Finished in 12.66 s (46 us/read; 1.32 M reads/minute).
+=======
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
+Finished in 5.77 s (21 us/read; 2.89 M reads/minute).
+>>>>>>> 97c32c2525760dfccd4b8e27c2a637d27638ea12
 
 === Summary ===
 
 Total read pairs processed:            277,829
   Read 1 with adapter:                 259,395 (93.4%)
   Read 2 with adapter:                       0 (0.0%)
+<<<<<<< HEAD
 Pairs that were too short:              20,554 (7.4%)
 Pairs written (passing filters):       238,841 (86.0%)
+=======
+Pairs that were too short:             186,797 (67.2%)
+Pairs written (passing filters):        72,801 (26.2%)
+>>>>>>> 97c32c2525760dfccd4b8e27c2a637d27638ea12
 
 Total basepairs processed:    34,731,602 bp
   Read 1:    17,928,519 bp
   Read 2:    16,803,083 bp
+<<<<<<< HEAD
 Total written (filtered):     19,001,727 bp (54.7%)
   Read 1:     4,562,126 bp
   Read 2:    14,439,601 bp
+=======
+Total written (filtered):      7,782,373 bp (22.4%)
+  Read 1:     3,542,857 bp
+  Read 2:     4,239,516 bp
+>>>>>>> 97c32c2525760dfccd4b8e27c2a637d27638ea12
 
 === First read: Adapter 1 ===
 
@@ -169,25 +187,43 @@ length	count	expect	max.err	error counts
 71	5927	67.8	1	4508 1419
 
 This is cutadapt 1.16 with Python 2.7.12
+<<<<<<< HEAD
 Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_2_30.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_30.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
 Finished in 18.82 s (27 us/read; 2.21 M reads/minute).
+=======
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_2_30.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_30.fastq.gz
+Running on 1 core
+Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
+Finished in 14.70 s (21 us/read; 2.83 M reads/minute).
+>>>>>>> 97c32c2525760dfccd4b8e27c2a637d27638ea12
 
 === Summary ===
 
 Total read pairs processed:            692,904
   Read 1 with adapter:                 631,784 (91.2%)
   Read 2 with adapter:                       0 (0.0%)
+<<<<<<< HEAD
 Pairs that were too short:              44,267 (6.4%)
 Pairs written (passing filters):       587,517 (84.8%)
+=======
+Pairs that were too short:             463,847 (66.9%)
+Pairs written (passing filters):       168,203 (24.3%)
+>>>>>>> 97c32c2525760dfccd4b8e27c2a637d27638ea12
 
 Total basepairs processed:    88,596,905 bp
   Read 1:    45,855,671 bp
   Read 2:    42,741,234 bp
+<<<<<<< HEAD
 Total written (filtered):     46,779,555 bp (52.8%)
   Read 1:    10,584,963 bp
   Read 2:    36,194,592 bp
+=======
+Total written (filtered):     18,211,144 bp (20.6%)
+  Read 1:     8,119,080 bp
+  Read 2:    10,092,064 bp
+>>>>>>> 97c32c2525760dfccd4b8e27c2a637d27638ea12
 
 === First read: Adapter 1 ===
 

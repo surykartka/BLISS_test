@@ -93,7 +93,7 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 	24.60% overall alignment rate
 	```
 	* NB_S2: 
-	
+		
 	```
 	587517 reads; of these:
 	  587517 (100.00%) were paired; of these:
