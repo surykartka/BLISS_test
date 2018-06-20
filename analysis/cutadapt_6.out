@@ -1,23 +1,23 @@
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
+Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 20 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_20.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_20.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
-Finished in 66.87 s (15 us/read; 3.95 M reads/minute).
+Finished in 68.04 s (15 us/read; 3.89 M reads/minute).
 
 === Summary ===
 
 Total read pairs processed:          4,406,313
   Read 1 with adapter:               2,721,252 (61.8%)
   Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:           4,039,970 (91.7%)
-Pairs written (passing filters):       277,829 (6.3%)
+Pairs that were too short:           4,033,487 (91.5%)
+Pairs written (passing filters):       281,630 (6.4%)
 
 Total basepairs processed:   134,042,164 bp
   Read 1:    54,942,115 bp
   Read 2:    79,100,049 bp
-Total written (filtered):     34,731,602 bp (25.9%)
-  Read 1:    16,803,083 bp
-  Read 2:    17,928,519 bp
+Total written (filtered):     34,955,705 bp (26.1%)
+  Read 1:    16,891,985 bp
+  Read 2:    18,063,720 bp
 
 === First read: Adapter 1 ===
 
@@ -31,25 +31,25 @@ length	count	expect	max.err	error counts
 6	2721252	1075.8	0	2721252
 
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_30.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_30.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
+Command line parameters: -g ^AGACTC -e 0 --overlap 6 --minimum-length 20 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_20.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_20.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 0.0% errors in paired-end legacy mode ...
-Finished in 56.02 s (17 us/read; 3.45 M reads/minute).
+Finished in 58.82 s (18 us/read; 3.28 M reads/minute).
 
 === Summary ===
 
 Total read pairs processed:          3,217,151
   Read 1 with adapter:               2,220,416 (69.0%)
   Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:           2,337,214 (72.6%)
-Pairs written (passing filters):       692,904 (21.5%)
+Pairs that were too short:           2,332,414 (72.5%)
+Pairs written (passing filters):       696,293 (21.6%)
 
 Total basepairs processed:   169,466,817 bp
   Read 1:    76,649,939 bp
   Read 2:    92,816,878 bp
-Total written (filtered):     88,596,905 bp (52.3%)
-  Read 1:    42,741,234 bp
-  Read 2:    45,855,671 bp
+Total written (filtered):     88,801,472 bp (52.4%)
+  Read 1:    42,822,025 bp
+  Read 2:    45,979,447 bp
 
 === First read: Adapter 1 ===
 
@@ -63,25 +63,25 @@ length	count	expect	max.err	error counts
 6	2220416	785.4	0	2220416
 
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 20 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_20.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_20.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
-Finished in 5.77 s (21 us/read; 2.89 M reads/minute).
+Finished in 6.13 s (22 us/read; 2.72 M reads/minute).
 
 === Summary ===
 
 Total read pairs processed:            277,829
   Read 1 with adapter:                 259,395 (93.4%)
   Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:             186,797 (67.2%)
-Pairs written (passing filters):        72,801 (26.2%)
+Pairs that were too short:             182,358 (65.6%)
+Pairs written (passing filters):        77,238 (27.8%)
 
 Total basepairs processed:    34,731,602 bp
   Read 1:    17,928,519 bp
   Read 2:    16,803,083 bp
-Total written (filtered):      7,782,373 bp (22.4%)
-  Read 1:     3,542,857 bp
-  Read 2:     4,239,516 bp
+Total written (filtered):      8,174,671 bp (23.5%)
+  Read 1:     3,652,701 bp
+  Read 2:     4,521,970 bp
 
 === First read: Adapter 1 ===
 
@@ -169,25 +169,25 @@ length	count	expect	max.err	error counts
 71	5927	67.8	1	4508 1419
 
 This is cutadapt 1.16 with Python 2.7.12
-Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 30 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_2_30.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_30.fastq.gz
+Command line parameters: -a GAGTCT -e 0.2 --overlap 5 --minimum-length 20 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_2_20.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_2_20.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes_30.fastq.gz barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_30.fastq.gz
 Running on 1 core
 Trimming 1 adapter with at most 20.0% errors in paired-end legacy mode ...
-Finished in 14.70 s (21 us/read; 2.83 M reads/minute).
+Finished in 14.93 s (22 us/read; 2.79 M reads/minute).
 
 === Summary ===
 
 Total read pairs processed:            692,904
   Read 1 with adapter:                 631,784 (91.2%)
   Read 2 with adapter:                       0 (0.0%)
-Pairs that were too short:             463,847 (66.9%)
-Pairs written (passing filters):       168,203 (24.3%)
+Pairs that were too short:             452,157 (65.3%)
+Pairs written (passing filters):       179,888 (26.0%)
 
 Total basepairs processed:    88,596,905 bp
   Read 1:    45,855,671 bp
   Read 2:    42,741,234 bp
-Total written (filtered):     18,211,144 bp (20.6%)
-  Read 1:     8,119,080 bp
-  Read 2:    10,092,064 bp
+Total written (filtered):     19,247,636 bp (21.7%)
+  Read 1:     8,407,946 bp
+  Read 2:    10,839,690 bp
 
 === First read: Adapter 1 ===
 

@@ -53,36 +53,40 @@ This paragraph corresponds to commands from [`cmd_4.sh`](cmd_4.sh).
 ![alt text](analysis/first_10.png)
 
 * Therefore, we assume barcode as 'AGACTC'. Numbers of R1 reads starting with the exact barcode:
-	* 2,463,583 (46.9%) in C1_S1
-	* 2,061,719 (54.0%) in NB_S1
-
+	* 2,463,583 (46.9% of total) in C1_S1:
+		* among which 2,349,656 (44.7% of total) have the barcode (max. one mismatch) in R2
+	* 2,061,719 (54.0% of total) in NB_S1
+		* among which 1,902,007 (50.1% of total) have the barcode (max. one mismatch) in R2
+	
 * Filtered and trimmed reads (min 1 nt, trimmed from both sides) were written to [`barcodes`](barcodes) and analyzed with FastQC ([C1_R1](FastQC/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_fastqc.html), [NB_R1](FastQC/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_fastqc.html)).
 
 ## Mapping to human genome
 
 This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 
-* Only reads of length at least 30 nt were left for mapping (`barcodes/*barcodes_30.fastq.gz`):
-	* 277,829 (5.3% of the initial reads) in C1_S1
-	* 692,904 (18.3% of the initial reads) in NB_S1
+* Only reads of length at least 30 nt were left for mapping (`barcodes/*barcodes_2_30.fastq.gz`):
+	* 277,829 R1 (5.3% of the initial reads) in C1_S1
+		* among which 72,801 R2 have at least 30 nt
+	* 692,904 R1 (18.3% of the initial reads) in NB_S1
+		* among which 168,203 R2 have at least 30 nt *now, check without this requirement!*
 * The paired-end reads were mapped to hg38 using `bowtie2` (stdout in [`bowtie.out`](analysis/bowtie.out)): `bowtie2 --fr -x hg38_mapping/bowtie_index/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index -1 barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_30.fastq.gz -2 barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_30.fastq.gz --threads 6 -S hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam 2> analysis/bowtie.out`:
 	
 ```
-277829 reads; of these:
-  277829 (100.00%) were paired; of these:
-    266963 (96.09%) aligned concordantly 0 times
-    7393 (2.66%) aligned concordantly exactly 1 time
-    3473 (1.25%) aligned concordantly >1 times
+77238 reads; of these:
+  77238 (100.00%) were paired; of these:
+    74161 (96.02%) aligned concordantly 0 times
+    2151 (2.78%) aligned concordantly exactly 1 time
+    926 (1.20%) aligned concordantly >1 times
     ----
-    266963 pairs aligned concordantly 0 times; of these:
-      236 (0.09%) aligned discordantly 1 time
+    74161 pairs aligned concordantly 0 times; of these:
+      36 (0.05%) aligned discordantly 1 time
     ----
-    266727 pairs aligned 0 times concordantly or discordantly; of these:
-      533454 mates make up the pairs; of these:
-        526680 (98.73%) aligned 0 times
-        709 (0.13%) aligned exactly 1 time
-        6065 (1.14%) aligned >1 times
-5.22% overall alignment rate
+    74125 pairs aligned 0 times concordantly or discordantly; of these:
+      148250 mates make up the pairs; of these:
+        147891 (99.76%) aligned 0 times
+        209 (0.14%) aligned exactly 1 time
+        150 (0.10%) aligned >1 times
+4.26% overall alignment rate
 ```
 
 * SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
