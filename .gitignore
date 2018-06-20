@@ -2,3 +2,4 @@ fastq/*
 trim_adapters/*.fastq*
 mapping/*
 barcodes/*.fastq*
+hg38_mapping/*.*
