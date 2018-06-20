@@ -95,26 +95,28 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 	* NB_S2: 
 		
 	```
-	587517 reads; of these:
-	  587517 (100.00%) were paired; of these:
-	    562546 (95.75%) aligned concordantly 0 times
-	    13418 (2.28%) aligned concordantly exactly 1 time
-	    11553 (1.97%) aligned concordantly >1 times
+	613650 reads; of these:
+	  613650 (100.00%) were paired; of these:
+	    574468 (93.61%) aligned concordantly 0 times
+	    21680 (3.53%) aligned concordantly exactly 1 time
+	    17502 (2.85%) aligned concordantly >1 times
 	    ----
-	    562546 pairs aligned concordantly 0 times; of these:
-	      666 (0.12%) aligned discordantly 1 time
+	    574468 pairs aligned concordantly 0 times; of these:
+	      673 (0.12%) aligned discordantly 1 time
 	    ----
-	    561880 pairs aligned 0 times concordantly or discordantly; of these:
-	      1123760 mates make up the pairs; of these:
-	        893524 (79.51%) aligned 0 times
-	        5851 (0.52%) aligned exactly 1 time
-	        224385 (19.97%) aligned >1 times
-	23.96% overall alignment rate
+	    573795 pairs aligned 0 times concordantly or discordantly; of these:
+	      1147590 mates make up the pairs; of these:
+	        911382 (79.42%) aligned 0 times
+	        7231 (0.63%) aligned exactly 1 time
+	        228977 (19.95%) aligned >1 times
+	25.74% overall alignment rate
 	```
 
 * In general, only a small fraction of reads map to the human genome with high precision:
-	* 3,450 (0.1% of total reads) = 2,620 + 194 + 636 "aligned exactly 1 time" in C1_S1
-	* 19,935 (0.5% of total reads) = 13,418 + 666 + 5,851 "aligned exactly 1 time" in NB_S2
+	* 5,754 (0.1% of total reads) = 4575 + 191 + 988 "aligned exactly 1 time" in C1_S1
+	* 29,584 (0.8% of total reads) = 21,680 + 673 + 7,231 "aligned exactly 1 time" in NB_S2
+	
+* Samples of the trimmed sequences are at [`mapping`](mapping) (`*head1000.fa`).
 
 * SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
 

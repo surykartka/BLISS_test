@@ -1,5 +1,6 @@
 fastq/*
 trim_adapters/*.fastq*
 mapping/*
+!mapping/*_head1000.fa
 barcodes/*.fastq*
 hg_mapping/*.*
