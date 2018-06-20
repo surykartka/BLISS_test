@@ -112,6 +112,10 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 	23.96% overall alignment rate
 	```
 
+* In general, only a small fraction of reads map to the human genome with high precision:
+	* 3,450 (0.1% of total reads) = 2,620 + 194 + 636 "aligned exactly 1 time" in C1_S1
+	* 19,935 (0.5% of total reads) = 13,418 + 666 + 5,851 "aligned exactly 1 time" in NB_S2
+
 * SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
 
 # Obsolete analysis
