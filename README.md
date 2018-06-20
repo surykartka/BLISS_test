@@ -85,7 +85,7 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 5.22% overall alignment rate
 ```
 
-* SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mappping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mappping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mappping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mappping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mappping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mappping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
+* SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
 
 
 ## Reads statistics
