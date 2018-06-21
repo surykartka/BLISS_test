@@ -58,7 +58,7 @@ This paragraph corresponds to commands from [`cmd_4.sh`](cmd_4.sh).
 	* 2,061,719 (54.0% of total) in NB_S1
 		* among which 1,902,007 (50.1% of total) have the barcode (max. one mismatch) in R2
 
-* R2 reads start usually with C, followed by GG (logo for [`C1`](mapping/C1_S1_R2_first10.pdf) and [`NB`](mapping/NB_S2_R2_first10.pdf)).
+* <a name="first_R2"></a>R2 reads start usually with C, followed by GG (logo for [`C1`](mapping/C1_S1_R2_first10.pdf) and [`NB`](mapping/NB_S2_R2_first10.pdf)).
 
 * Filtered and trimmed reads (min 1 nt, trimmed from both sides) were written to [`barcodes`](barcodes) and analyzed with FastQC ([C1_R1](FastQC/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_fastqc.html), [NB_R1](FastQC/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_fastqc.html)).
 
