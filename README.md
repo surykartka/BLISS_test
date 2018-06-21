@@ -52,12 +52,14 @@ This paragraph corresponds to commands from [`cmd_4.sh`](cmd_4.sh).
 * The first and last 10 nucleotides in R1 and R2 reads, respectively, plotted in [WebLogo](https://weblogo.berkeley.edu/logo.cgi):
 ![alt text](analysis/first_10.png)
 
-* Therefore, we assume barcode as 'AGACTC' (and 'GAGTCT'/'CAGTCT' for R2 reads *as C is very common at the R2 5' ends*). Numbers of R1 reads starting with the exact barcode:
+* Therefore, we assume barcode as 'AGACTC' (and 'GAGTCT'/'CAGTCT' at 3' end for R2 reads *as C is very common at the R2 5' ends*). Numbers of R1 reads starting with the exact barcode:
 	* 2,463,583 (46.9% of total) in C1_S1:
 		* among which 2,349,656 (44.7% of total) have the barcode (max. one mismatch) in R2
 	* 2,061,719 (54.0% of total) in NB_S1
 		* among which 1,902,007 (50.1% of total) have the barcode (max. one mismatch) in R2
-	
+
+* R2 reads start usually with C, followed by GG (logo for [`C1`](C1_S1_R2_first10.pdf) and [`NB`](NB_S2_R2_first10.pdf)).
+
 * Filtered and trimmed reads (min 1 nt, trimmed from both sides) were written to [`barcodes`](barcodes) and analyzed with FastQC ([C1_R1](FastQC/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_fastqc.html), [NB_R1](FastQC/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes_fastqc.html)).
 
 ## Mapping to human genome
