@@ -73,7 +73,8 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 	* 692,904 R1 (18.3% of the initial reads) in NB_S1
 		* among which 587,517 R2 have at least 1 nt
 			* among which 168,203 R2 have at least 30 nt
-* The paired-end reads (R1 at least 30 nt, R2 at least 1 nt, in ["mixed mode"](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)) were mapped to hg38 using [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (stdout in [`bowtie.out`](analysis/bowtie.out)): `bowtie2 -5 1 --fr -N 1 -x hg_mapping/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index -1 barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz -2 barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz --threads 6 -S hg_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_N1.sam 2>> analysis/bowtie.out`:
+* Then, first nucleotides from R2 reads were trimmed with `fastx_trimmer`: `fastx_trimmer -Q33 -z -f 2 < barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq > barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30_trim1.fastq.gz`
+* The paired-end reads (R1 at least 30 nt, R2 at least 30 nt, in ["mixed mode"](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml)) were mapped to hg38 using [bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (stdout in [`bowtie.out`](analysis/bowtie.out)): `bowtie2 -5 1 --fr -N 1 -x hg_mapping/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna.bowtie_index -1 barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes_2_30.fastq.gz -2 barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes_2_30.fastq.gz --threads 6 -S hg_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_N1.sam 2>> analysis/bowtie.out`:
 	
 	* C1_S1: 
 	
@@ -121,6 +122,8 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 * Samples of the trimmed sequences are at [`mapping`](mapping) (`*head1000.fa`).
 
 * SAM files were converted to BAM using [samtools](http://samtools.sourceforge.net/): `samtools view -Sb hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam` and then to BED using [bedtools](https://code.google.com/archive/p/bedtools/): `bedtools bamtobed -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bam > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed`, and sorted: `bedtools sort -i hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.bed > hg38_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie_sorted.bed`.
+
+* Get the read length: `samtools stats hg_mapping/B_SC-BLESS_C1_S1_L001_BCHLT_bowtie.sam | grep ^RL | cut -f 2- > hg_mapping/C1_S1_bowtie_RL`
 
 # Obsolete analysis
 

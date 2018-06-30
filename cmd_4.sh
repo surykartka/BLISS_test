@@ -20,10 +20,12 @@ python scripts/seqlength_distribution.py mapping/R2_5prime/C1_S1_R2.fa > mapping
 python scripts/seqlength_distribution.py mapping/R2_5prime/NB_S2_R2.fa > mapping/R2_5prime/NB_seqlengths.txt
 R --no-save < scripts/plot_read_length_distribution.R
 
-weblogo -f mapping/R1_5prime/C1_S1_R1_first10.fa -D fasta -o mapping/R1_5prime/C1_S1_R1_first10.pdf -F pdf -A dna --errorbars no -c classic
-weblogo -f mapping/R1_5prime/NB_S2_R1_first10.fa -D fasta -o mapping/R1_5prime/NB_S2_R1_first10.pdf -F pdf -A dna --errorbars no -c classic
-weblogo -f mapping/R2_5prime/C1_S1_R2_last10.fa -D fasta -o mapping/R2_5prime/C1_S1_R2_last10.pdf -F pdf -A dna --errorbars no -c classic
-weblogo -f mapping/R2_5prime/NB_S2_R2_last10.fa -D fasta -o mapping/R2_5prime/NB_S2_R2_last10.pdf -F pdf -A dna --errorbars no -c classic
+weblogo -f mapping/R1_5prime/C1_S1_R1_first10.fa -D fasta -o mapping/C1_S1_R1_first10.pdf -F pdf -A dna --errorbars no -c classic
+weblogo -f mapping/R1_5prime/NB_S2_R1_first10.fa -D fasta -o mapping/NB_S2_R1_first10.pdf -F pdf -A dna --errorbars no -c classic
+weblogo -f mapping/R2_5prime/C1_S1_R2_last10.fa -D fasta -o mapping/C1_S1_R2_last10.pdf -F pdf -A dna --errorbars no -c classic
+weblogo -f mapping/R2_5prime/NB_S2_R2_last10.fa -D fasta -o mapping/NB_S2_R2_last10.pdf -F pdf -A dna --errorbars no -c classic
+weblogo -f mapping/R2_5prime/C1_S1_R2_first10.fa -D fasta -o mapping/C1_S1_R2_first10.pdf -F pdf -A dna --errorbars no -c classic
+weblogo -f mapping/R2_5prime/NB_S2_R2_first10.fa -D fasta -o mapping/NB_S2_R2_first10.pdf -F pdf -A dna --errorbars no -c classic
 
 cutadapt -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_C1_S1_L001_R1_BCHLT_barcodes.fastq.gz -p barcodes/B_SC-BLESS_C1_S1_L001_R2_BCHLT_barcodes.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_C1_S1_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz > analysis/cutadapt_4.out
 cutadapt -g ^AGACTC -e 0 --overlap 6 --minimum-length 1 --discard-untrimmed -o barcodes/B_SC-BLESS_NB_S2_L001_R1_BCHLT_barcodes.fastq.gz -p barcodes/B_SC-BLESS_NB_S2_L001_R2_BCHLT_barcodes.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R1_BCHLT_cutadapt_native_adapters_4.fastq.gz trim_adapters/B_SC-BLESS_NB_S2_L001_R2_BCHLT_cutadapt_native_adapters_4.fastq.gz>> analysis/cutadapt_4.out

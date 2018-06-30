@@ -7,10 +7,10 @@ t <- read.delim('C1_S1_R1_seqlengths.txt', header=F)
 hist(t$V1, xlim=c(0,80), col='grey', xlab='Read length (no barcodes)', main='C1_S1 R1 lengths')
 
 t <- read.delim('C1_S1_R2_seqlengths.txt', header=F)
-hist(t$V1, xlim=c(0,80), col='grey', xlab='Read length (no barcodes)', main='NB_S2 R1 lengths')
+hist(t$V1, xlim=c(0,80), col='grey', xlab='Read length (no barcodes)', main='C1_S1 R2 lengths')
 
 t <- read.delim('NB_S2_R1_seqlengths.txt', header=F)
-hist(t$V1, xlim=c(0,80), col='grey', xlab='Read length (no barcodes)', main='C1_S1 R2 lengths')
+hist(t$V1, xlim=c(0,80), col='grey', xlab='Read length (no barcodes)', main='NB_S2 R1 lengths')
 
 t <- read.delim('NB_S2_R2_seqlengths.txt', header=F)
 hist(t$V1, xlim=c(0,80), col='grey', xlab='Read length (no barcodes)', main='NB_S2 R2 lengths')
