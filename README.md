@@ -127,7 +127,7 @@ This paragraph corresponds to commands from [`cmd_5.sh`](cmd_5.sh).
 
 ## Where do the reads map?
 
-Script [`length_distribution.py`](scripts/length_distribution.py) performs very basic analysis of the mapped reads, including printing histogram of length of mapped reads, as well as statistics on numbers of regions to which the reads map. These are regions with highest (paired and unique) read coverage:
+Script [`length_distribution.py`](scripts/length_distribution.py) performs very basic analysis of the mapped reads, including printing histogram of length of mapped reads, as well as statistics on numbers of regions to which the reads map. Standard output is written to [`10+reads`](analysis/10+reads). These are regions with highest (paired and unique) read coverage:
 
 * [chr18:6258510-6258711](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr18%3A6258510-6258711): 425
 * [chr4:173823622-173823819](https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr4%3A173823622-173823819): 378
